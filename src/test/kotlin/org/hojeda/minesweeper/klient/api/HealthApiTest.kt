@@ -12,7 +12,7 @@ class HealthApiTest: BaseApiTest() {
 
         val target = HealthApi(restClient)
 
-        val response = target.pingGet()
+        val response = target.ping()
 
         assertThat(response, `is`("pong"))
     }

@@ -23,6 +23,6 @@ class HealthApi(
      * 
      * @return void
      */
-    fun pingGet(): String = restClient.get("/ping").body
+    fun ping(): String = restClient.get("/ping").body
 
 }
